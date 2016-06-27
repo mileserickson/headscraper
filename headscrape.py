@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Scrape email headers to a CSV file."""
 
 from __future__ import print_function
@@ -36,4 +37,3 @@ if __name__ == "__main__":
             csv_name = "{}.csv".format(mbox_name)
         print("Writing {}...".format(csv_name))
         HeadScraper(mbox_name).write_csv(csv_name)
-
